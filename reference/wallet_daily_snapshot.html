@@ -112,8 +112,30 @@
     <p>Exposes the <code>GET /sapi/v1/accountSnapshot</code> endpoint.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>wallet_daily_snapshot</span><span class='op'>(</span>type <span class='op'>=</span> <span class='st'>"SPOT"</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>wallet_daily_snapshot</span><span class='op'>(</span>
+  type <span class='op'>=</span> <span class='st'>"SPOT"</span>,
+  start_time <span class='op'>=</span> <span class='cn'>NULL</span>,
+  end_time <span class='op'>=</span> <span class='cn'>NULL</span>,
+  limit <span class='op'>=</span> <span class='fl'>5</span>
+<span class='op'>)</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>start_time</th>
+      <td><p>Start time. Something that can be coerced to <code>POSIXct</code>.</p></td>
+    </tr>
+    <tr>
+      <th>end_time</th>
+      <td><p>End time. Something that can be coerced to <code>POSIXct</code>.</p></td>
+    </tr>
+    <tr>
+      <th>limit</th>
+      <td><p>Maximum number of records in result. Default is 5, minimum is 5
+and maximum is 30.</p></td>
+    </tr>
+    </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 

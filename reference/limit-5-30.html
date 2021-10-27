@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • binance</title>
+<title>Limit with default 5 and maximum 30. — limit-5-30 • binance</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,8 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Limit with default 5 and maximum 30. — limit-5-30" />
+<meta property="og:description" content="Limit with default 5 and maximum 30." />
 
 
 
@@ -58,7 +59,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -100,138 +101,30 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Limit with default 5 and maximum 30.</h1>
+    
+    <div class="hidden name"><code>limit-5-30.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Limit with default 5 and maximum 30.</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="authenticate.html">authenticate()</a></code> </p>
-        </td>
-        <td><p>Set Binance REST API key &amp; secret</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="limit-1000-1000.html">limit-1000-1000</a></code> </p>
-        </td>
-        <td><p>Limit with default 1000 and maximum 1000.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="limit-5-30.html">limit-5-30</a></code> </p>
-        </td>
-        <td><p>Limit with default 5 and maximum 30.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="limit-500-1000.html">limit-500-1000</a></code> </p>
-        </td>
-        <td><p>Limit with default 500 and maximum 1000.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="market_average_price.html">market_average_price()</a></code> </p>
-        </td>
-        <td><p>Current average price for a symbol</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="market_exchange_info.html">market_exchange_info()</a></code> </p>
-        </td>
-        <td><p>Current exchange trading rules and symbol information</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="market_klines.html">market_klines()</a></code> </p>
-        </td>
-        <td><p>K-Lines (candlestick bars) for a symbol</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="market_ping.html">market_ping()</a></code> </p>
-        </td>
-        <td><p>Test connectivity to the Binance REST API</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="market_price_ticker.html">market_price_ticker()</a></code> </p>
-        </td>
-        <td><p>Latest price for a symbol</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="market_recent_trades.html">market_recent_trades()</a></code> </p>
-        </td>
-        <td><p>Get recent trades</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="market_server_time.html">market_server_time()</a></code> </p>
-        </td>
-        <td><p>Get the current server time</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="spot_account.html">spot_account()</a></code> </p>
-        </td>
-        <td><p>Get current account information</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="spot_trades_list.html">spot_trades_list()</a></code> </p>
-        </td>
-        <td><p>Get current account trades list</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="trade-parameters.html">trade-parameters</a></code> </p>
-        </td>
-        <td><p>Parameters for trade functions</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="wallet_coins.html">wallet_coins()</a></code> </p>
-        </td>
-        <td><p>Get information of coins (available for deposit and withdraw) for user.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="wallet_daily_snapshot.html">wallet_daily_snapshot()</a></code> </p>
-        </td>
-        <td><p>Daily account snapshot</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="wallet_deposit_history.html">wallet_deposit_history()</a></code> </p>
-        </td>
-        <td><p>Deposit history</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>limit</th>
+      <td><p>Maximum number of records in result. Default is 5, minimum is 5
+and maximum is 30.</p></td>
+    </tr>
     </table>
-  </div>
 
+
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
