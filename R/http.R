@@ -92,7 +92,7 @@ GET <- function(
   #
   query <- query[!sapply(query, is.null)]
 
-  response <- httr::GET(
+  response <- purrr::insistently(httr::GET)(
     url,
     query = query,
     headers,
